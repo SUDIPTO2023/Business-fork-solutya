@@ -1,0 +1,291 @@
+/* ===================================
+   FADE IN ANIMATIONS
+=================================== */
+
+
+.fade-in {
+
+    animation: fadeIn 0.8s ease forwards;
+
+}
+
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+    }
+
+}
+
+
+
+/* ===================================
+   SLIDE UP (Most used)
+=================================== */
+
+
+.fade-up {
+
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards;
+
+}
+
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(40px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+/* ===================================
+   SLIDE LEFT
+=================================== */
+
+
+.slide-left {
+
+    opacity:0;
+    animation: slideLeft 0.8s ease forwards;
+
+}
+
+
+@keyframes slideLeft {
+
+
+    from {
+
+        opacity:0;
+        transform:translateX(-50px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+
+
+/* ===================================
+   SLIDE RIGHT
+=================================== */
+
+
+.slide-right {
+
+    opacity:0;
+    animation: slideRight 0.8s ease forwards;
+
+}
+
+
+@keyframes slideRight {
+
+
+    from {
+
+        opacity:0;
+        transform:translateX(50px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+
+
+/* ===================================
+   SCALE POP
+=================================== */
+
+
+.scale-in {
+
+    opacity:0;
+    animation:scaleIn .7s ease forwards;
+
+}
+
+
+@keyframes scaleIn {
+
+
+    from {
+
+        opacity:0;
+        transform:scale(.85);
+
+    }
+
+
+    to {
+
+        opacity:1;
+        transform:scale(1);
+
+    }
+
+}
+
+
+
+/* ===================================
+   FLOATING EFFECT
+=================================== */
+
+
+.float {
+
+    animation:floating 3s ease-in-out infinite;
+
+}
+
+
+@keyframes floating {
+
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+}
+
+
+
+/* ===================================
+   HOVER EFFECTS
+=================================== */
+
+
+.hover-grow {
+
+    transition:transform .3s ease;
+
+}
+
+
+.hover-grow:hover {
+
+    transform:scale(1.05);
+
+}
+
+
+
+.hover-lift {
+
+    transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+
+}
+
+
+.hover-lift:hover {
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.12);
+
+}
+
+
+
+/* ===================================
+   BUTTON ANIMATION
+=================================== */
+
+
+.btn-animation {
+
+    transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+
+}
+
+
+.btn-animation:hover {
+
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.18);
+
+}
+
+
+
+/* ===================================
+   DELAY UTILITIES
+=================================== */
+
+
+.delay-1 {
+
+    animation-delay:.2s;
+
+}
+
+
+.delay-2 {
+
+    animation-delay:.4s;
+
+}
+
+
+.delay-3 {
+
+    animation-delay:.6s;
+
+}
